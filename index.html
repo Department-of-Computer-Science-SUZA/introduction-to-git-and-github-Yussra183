@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>My Web Page</title>
+<link rel="icon" type="image/x-icon" href="images/logo.jpeg">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+<ul>
+<li><a href="form.html"> Form</a></li>
+<li><a href="Bootstrap.html">Bootstrap</a></li> 
+</ul>
+<link rel="stylesheet" href="style.css">
+<!-- Task 2: Headings, Paragraphs, HR, BR -->
+<h1>Welcome to My Web Page</h1>
+<h2>I am yussra salum abdalla</h2>
+<h3>From computer science</h3>
+<h4>I am Learning HTML5</h4>
+<h5>This is my first assignment</h5>
+<h6>This is my first web page</h6>
+
+<p>This paragraph gives you a brief intro about the page.</p>
+<hr>
+<p>This is a second paragraph.<br>
+And this line starts after a line break.</p>
+
+<!-- Task 3: Lists -->
+<h2>My Top 5 Favorite Books</h2>
+<ol>
+<li>Hawa the bus driver</li>
+<li>the heart</li>
+<li> ngoswe penzi kitovu cha uzembe</li>
+<li>black beatifull</li>
+<li>Know your religion</li>
+</ol>
+
+<h2>My Top 5 Hobbies</h2>
+<ul>
+<li>Reading story books</li>
+<li>makeup artist</li>
+<li>watching catton</li>
+<li>playing game</li>
+<li>Chatting with friends</li>
+</ul>
+
+<!-- Task 4: Images with alt text -->
+<h2>My Favorite Images</h2>
+<img src="images/logo.jpeg" alt="suza logo" width="200">
+<img src="images/img.jpeg" alt="linkedin" width="150">
+
+<!-- Task 5: Links -->
+<h2>Useful Links</h2>
+<p>
+Visit <a href="https://www.suza.ac.tz" target="_blank">suza</a><br>
+Watch videos on <a href="https://www.w3schools.com" target="_blank">w3schools</a><br>
+Learn code at <a href="https://www.whatsapp.com" target="_blank">whatsapp</a>
+</p>
+
+<h2>Part 1 challenge</h2>
+<table style="width: 100;" border="1px black">
+<tr>
+<th>Day</th>
+<th>Morning</th>
+<th>Evening</th>
+</tr>
+<tr>
+<td>Monday</td>
+<td>Exercise</td>
+<td>Swimming</td>
+</tr>
+<tr>
+<td>Tuesday</td>
+<td>cooking foods</td>
+<td>Physical Activity</td>
+</tr>
+<tr>
+<td>Wednesday</td>
+<td>Teaching my sibbling</td>
+<td>Programming</td>
+</tr>
+<tr>
+<td>Thursday</td>
+<td>Travelling in good place</td>
+<td>Personal Projects</td>
+</tr>
+<tr>
+<td>Friday</td>
+<td>Cleaning</td>
+<td>refreshment</td>
+</tr>
+</table>
+
+<h2>The purpose of head</h2>
+<p>The purpose of the head is to provide information about the web page behavior, appearance and visibility</p><br>
+
+<h3>The reason Why use semantic tags like section, article, and footer </h3>
+<p>Semantic tags improve code readability, accessibility and organise web content in a meaningfull way</p><br>
+
+<h1>PART 2: UNDERSTANDING AND EXPLORING THE DOM</h1>
+<P>HTML source file is the raw code written by a developer and saved as an .html file while<br> DOM is a structured representation of a webpage that the browser creates from HTML</P><br><br>
+<p>When you modify DOM nodes in the browser developer tools changes only happen in the live <br>
+representation of the webpage, but do not change the original HTML source file</p>
+<h2 id="main-title">Read more</h2>
+<div class="box">
+<p>This is a CSS class.</p>
+</div>
+<a href="hover style">Hover over me</a>
+
+<p>Inline CSS is applied directly within HTML elements by using style attribute that affect the specific element</p><br>
+<p>Internal CSS is written inside the sytle tag in html which is used to style multiple elements within the same file</p>
+<p>External CSS is written in a separate file of .css that is linked to html document</p><br>
+<p>Conflicting styes are resolved using specificity, inheritance and cascade order</p>
+
+<h2>Part 5</h2>
+<div class="navbar">my navbar</div>
+
+<p>Responsive design is a web development that ensures website adapt to different screen size and devices that provide optimal view experience</p>
+<p>Mobile-first design is a best practice because it prioritize usability on small screen, ensuring that websites and applicationa<br>
+are optimized for mobile devices before scalling up to larger screens</p>
+
+
+
+</body>
+
+</html>
+
+FORM.HTML
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Form</title>
+</head>
+<body>
+<h2>Form</h2>
+<form action="submit.php" method="post" enctype="multipart/form-data">
+<fieldset>
+
+<label for="name">Name:</label>
+<input type="text" id="name" name="name" required><br><br>
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" required><br><br>
+<label for="password">Password:</label>
+<input type="password" id="password" name="password" required><br><br>
+<label>Gender:</label><br>
+<input type="radio" name="gender" value="male" required> Male<br>
+<input type="radio" name="gender" value="female"> Female<br>
+<input type="radio" name="gender" value="other"> Other<br><br>
+
+</fieldset>
+
+<fieldset>
+
+<input type="checkbox" name="interests" value="coding"> Coding<br>
+<input type="checkbox" name="interests" value="music"> Music<br>
+<input type="checkbox" name="interests" value="sports"> Sports<br><br> 
+</fieldset>
+<fieldset>
+
+<legend>More Information</legend><br>
+<label for="country">Country:</label>
+<select id="country" name="country" required>
+<option value="">Select your country</option>
+<option value="Tanzania">Tanzania</option>
+<option value="Kenya">Kenya</option>
+<option value="Uganda">Uganda</option>
+<option value="Tanzania">Malawi</option>
+<option value="Kenya">Zimbabwe</option>
+<option value="Uganda">Canada</option>
+</select><br><br>
+
+<label for="profile">Upload Profile Picture:</label>
+<input type="file" id="profile" name="profile" accept="Images"><br><br>
+
+<input type="submit" value="Submit Form">
+
+</fieldset>
+
+<p>The difference between GET and POST is that GET is used to request data from server but POST is used to send data to the server</p><br><br>
+<p>If required fields are empty upon submission, the browser, server or JavaScript validation may prevent submission and show an error<br>
+ensuring that the necessary data is entered before processing form</p>
+</form>
+</body>
+</html>
+
+
+BOOTSTRAP.HTML
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Form</title>
+</head>
+<body>
+<h2>Form</h2>
+<form action="submit.php" method="post" enctype="multipart/form-data">
+<fieldset>
+
+<label for="name">Name:</label>
+<input type="text" id="name" name="name" required><br><br>
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" required><br><br>
+<label for="password">Password:</label>
+<input type="password" id="password" name="password" required><br><br>
+<label>Gender:</label><br>
+<input type="radio" name="gender" value="male" required> Male<br>
+<input type="radio" name="gender" value="female"> Female<br>
+<input type="radio" name="gender" value="other"> Other<br><br>
+
+</fieldset>
+
+<fieldset>
+
+<input type="checkbox" name="interests" value="coding"> Coding<br>
+<input type="checkbox" name="interests" value="music"> Music<br>
+<input type="checkbox" name="interests" value="sports"> Sports<br><br> 
+</fieldset>
+<fieldset>
+
+<legend>More Information</legend><br>
+<label for="country">Country:</label>
+<select id="country" name="country" required>
+<option value="">Select your country</option>
+<option value="Tanzania">Tanzania</option>
+<option value="Kenya">Kenya</option>
+<option value="Uganda">Uganda</option>
+<option value="Tanzania">Malawi</option>
+<option value="Kenya">Zimbabwe</option>
+<option value="Uganda">Canada</option>
+</select><br><br>
+
+<label for="profile">Upload Profile Picture:</label>
+<input type="file" id="profile" name="profile" accept="Images"><br><br>
+
+<input type="submit" value="Submit Form">
+
+</fieldset>
+
+<p>The difference between GET and POST is that GET is used to request data from server but POST is used to send data to the server</p><br><br>
+<p>If required fields are empty upon submission, the browser, server or JavaScript validation may prevent submission and show an error<br>
+ensuring that the necessary data is entered before processing form</p>
+</form>
+</body>
+</html>
+
+
+STYLE.CSS
+
+body {
+font-family: Arial, sans-serif;
+background-color: blueviolet;
+color: black;
+padding: 20px;
+text-align: left;
+}
+
+h2 {
+color: blue; 
+font-size: 28px; 
+font-family: sans-serif; 
+text-align: center; 
+margin-top: 30px; 
+margin-bottom: 20px; 
+background-color: white; 
+padding: 10px 0; 
+border-radius: 8px; 
+}
+
+a:hover, button:hover {
+background-color: blanchedalmond;
+color: white;
+cursor: pointer;
+}
+
+img {
+width: 100%;
+height: 300px;
+max-width: 300px; 
+}
+@media (max-width: 600px) {
+body {
+background-color: white;
+font-size: 16px;
+}
+.navbar {
+display: none; 
+}
+}
+
+.navbar {
+background: pink;
+color: white;
+padding: 10px;
+text-align: center;
+}
+@media (max-width: 600px) {
+.navbar {
+display: none;
+}
+}
